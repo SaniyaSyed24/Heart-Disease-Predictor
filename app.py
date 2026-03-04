@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,jsonify
 import pickle
 import numpy as np
 
@@ -33,6 +33,21 @@ def predict():
 
     except:
         return render_template("index.html", prediction_text="Invalid Input. Please enter valid numbers.")
+    
+# API endpoint (for external apps)
+@app.route("/predict_api", methods=["POST"])
+def predict_api():
+    
+    data = request.get_json(force=True)
+    
+    features = np.array(list(data.values())).reshape(1, -1)
+    
+    prediction = model.predict(features)
+    
+    return jsonify({
+        "prediction": int(prediction[0])
+    })
+
 
 
 if __name__ == "__main__":
