@@ -9,6 +9,7 @@
 <title>Heart Disease Prediction</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
@@ -67,13 +68,13 @@ font-size:12px;
 <div class="row">
 
 <div class="col-md-6 mb-3">
-<label>Age</label>
+<label><i class="fa-solid fa-user"></i> Age</label>
 <input type="number" name="age" class="form-control" required>
 <small class="text-muted">Risk increases after age 45.</small>
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Sex</label>
+<label><i class="fa-solid fa-venus-mars"></i> Sex</label>
 <select name="sex" class="form-control">
   <option value="">Select</option>
   <option value="1">Male</option>
@@ -83,7 +84,7 @@ font-size:12px;
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Chest Pain Type</label>
+<label><i class="fa-solid fa-heart-circle-exclamation"></i> Chest Pain Type</label>
 <select name="cp" class="form-control">
   <option value="">Select</option>
   <option value="0">Typical Angina</option>
@@ -95,19 +96,19 @@ font-size:12px;
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Resting Blood Pressure</label>
+<label><i class="fa-solid fa-heart-pulse"></i> Resting Blood Pressure</label>
 <input type="number" name="trestbps" class="form-control" required>
 <small class="text-muted">Normal resting BP ≈ 120 mmHg.</small>
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Cholesterol</label>
+<label><i class="fa-solid fa-droplet"></i> Cholesterol</label>
 <input type="number" name="chol" class="form-control" required>
 <small class="text-muted">Normal cholesterol: below 200 mg/dL.</small>
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Fasting Blood Sugar</label>
+<label><i class="fa-solid fa-vial"></i> Fasting Blood Sugar</label>
 <select name="fbs" class="form-control">
   <option value="">Select</option>
   <option value="1">Greater than 120 mg/dL</option>
@@ -117,7 +118,7 @@ font-size:12px;
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Rest ECG</label>
+<label><i class="fa-solid fa-wave-square"></i> Rest ECG</label>
 <select name="restecg" class="form-control">
 <option value="">Select</option>
 <option value="0">Normal</option>
@@ -128,13 +129,13 @@ font-size:12px;
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Maximum Heart Rate</label>
+<label><i class="fa-solid fa-heart"></i> Maximum Heart Rate</label>
 <input type="number" name="thalach" class="form-control" required>
 <small class="text-muted">Normal resting heart rate: 60–100 bpm.</small>
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Exercise Induced Angina</label>
+<label><i class="fa-solid fa-person-running"></i> Exercise Induced Angina</label>
 <select name="exang" class="form-control">
   <option value="">Select</option>
   <option value="1">Yes</option>
@@ -144,13 +145,13 @@ font-size:12px;
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Oldpeak</label>
+  <label><i class="fa-solid fa-chart-line"></i> Oldpeak</label>
 <input type="number" step="0.1" name="oldpeak" class="form-control">
 <small class="text-muted">ST depression induced by exercise.</small>
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Slope</label>
+  <label><i class="fa-solid fa-arrow-trend-up"></i> Slope</label>
 <select name="slope" class="form-control">
   <option value="">Select</option>
   <option value="0">Upsloping</option>
@@ -161,13 +162,13 @@ font-size:12px;
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Number of Major Vessels (CA)</label>
+<label><i class="fa-solid fa-diagram-project"></i> Number of Major Vessels (CA)</label>
 <input type="number" name="ca" class="form-control">
 <small class="text-muted">Number of major vessels colored by fluoroscopy (0–3).</small>
 </div>
 
 <div class="col-md-6 mb-3">
-<label>Thal</label>
+<label><i class="fa-solid fa-heart-circle-check"></i> Thal</label>
 <select name="thal" class="form-control">
   <option value="">Select</option>
   <option value="1">Normal</option>
